@@ -1,0 +1,55 @@
+/* Monochrome CSS for Header Component */
+
+.header {
+    background-color: #DAD2D8; /* Light gray background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.logo h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #683257; /* Slightly darker gray */
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation li {
+    font-size: 1.3rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #757474; /* Medium gray */
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #000; /* Black on hover */
+}
+
+.navigation a:active {
+    color: #777; /* Darker gray on active */
+}

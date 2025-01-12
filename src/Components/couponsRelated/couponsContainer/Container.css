@@ -1,0 +1,121 @@
+/* Container for all coupons */
+.couponsContainer {
+    display: flex; /* Align all items in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-evenly; /* Add spacing between the coupons */
+    align-items: flex-start; /* Align coupons at the top */
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    margin: 50px auto; /* Center the container */
+    width: 90%; /* Set container width */
+    max-width: 1200px; /* Restrict maximum width */
+    padding: 20px;
+    gap: 20px; /* Space between rows */
+}
+
+/* Individual coupon styling */
+.coupon {
+    background-color: #333; /* Dark gray background for coupon */
+    border-radius: 10px; /* Rounded corners */
+    width: 250px; /* Fixed width for each coupon */
+    padding: 15px; /* Inner spacing for content */
+    color: #fff; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Hover effect for coupons */
+.coupon:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+/* Image inside a coupon */
+.coupon img {
+    width: 100%; /* Ensure images fill the card width */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Maintain image proportions */
+    border-radius: 8px; /* Match card border radius */
+    margin-bottom: 10px;
+}
+
+/* Title styling for each coupon */
+.coupon h3 {
+    font-family: 'Cursive', sans-serif; /* Cursive font for titles */
+    font-size: 20px;
+    color: #fff; /* White text for titles */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Description styling */
+.coupon p {
+    font-size: 14px;
+    color: #ccc; /* Light gray for description text */
+    margin-bottom: 10px;
+}
+
+/* Price styling */
+.coupon .coupon-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* White text for price */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Link inside a coupon */
+.coupon-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Ensure the entire coupon area is clickable */
+}
+
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+/* Pagination buttons */
+.pagination button {
+    padding: 10px 20px;
+    background-color: #333; /* Dark gray for button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Disabled pagination button */
+.pagination button:disabled {
+    background-color: #444; /* Darker gray for disabled state */
+    cursor: not-allowed;
+}
+
+/* Hover effect for enabled pagination buttons */
+.pagination button:hover:not(:disabled) {
+    background-color: #555; /* Slightly lighter gray on hover */
+}
+
+/* Pagination text */
+.pagination span {
+    font-size: 16px;
+    color: #fff; /* White text */
+}
+
+/* No coupons available message */
+.couponsContainer > div > p {
+    text-align: center;
+    font-size: 18px;
+    color: #ccc; /* Light gray text */
+    margin: 20px auto;
+}
+
+
