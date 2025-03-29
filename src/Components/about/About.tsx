@@ -1,6 +1,4 @@
-import React from 'react';
-import './About.css'; // Assuming you have a separate CSS file for styling
-
+import './About.css'; 
 const About = () => {
   return (
     <div className="about-container">
@@ -9,7 +7,7 @@ const About = () => {
         At <strong>Elegant Essentials</strong>, we believe that luxury doesn’t have to come with a hefty price tag. Founded with the mission to bring high-end, minimalist furniture to homes without compromising on quality or style, we specialize in offering meticulously crafted pieces that blend sleek modern design with enduring functionality.
       </p>
       <p className="about-text">
-        Our journey started with a simple idea: <strong>make timeless, sophisticated furniture accessible to everyone</strong>. Inspired by the beauty of natural materials like concrete and wood, we sought to create a space where style meets savings, without sacrificing the elegance that makes your home feel truly special. Whether you’re curating your dream living room or looking for a statement piece for your dining area, we offer carefully selected furniture that aligns with your vision of modern luxury.
+        Our journey started with a simple idea:some another text <strong>make timeless, sophisticated furniture accessible to everyone</strong>. Inspired by the beauty of natural materials like concrete and wood, we sought to create a space where style meets savings, without sacrificing the elegance that makes your home feel truly special. Whether you’re curating your dream living room or looking for a statement piece for your dining area, we offer carefully selected furniture that aligns with your vision of modern luxury.
       </p>
       <h2 className="about-subtitle">The Concept</h2>
       <p className="about-text">
@@ -35,6 +33,7 @@ const About = () => {
       </p>
       <p className="about-text">
         Welcome to the world of <strong>Elegant Essentials</strong>—where modern luxury and smart savings come together to create a home that’s as beautiful as it is functional.
+        Email us at: <a href="mailto:nomail@gmail.com">nomail@gmail.com</a>
       </p>
     </div>
   );

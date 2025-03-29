@@ -1,0 +1,142 @@
+/* Import the modern minimalist font */
+
+
+/* Main Login Page */
+.login {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #000;
+    width: 400px;
+}
+
+/* Open Login Button */
+.buttonOpenModal {
+    background: transparent;
+    border: 2px solid #C96A50;
+    color: #C96A50;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.buttonOpenModal:hover {
+    background: #C96A50;
+    color: black;
+}
+
+/* Login Modal */
+.ReactModal__Content {
+    background: #000;
+    color: #fff;
+    border: 2px solid #C96A50;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Modal Title */
+.ReactModal__Content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #C96A50;
+}
+
+/* Input Fields */
+.ReactModal__Content input {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 2px solid #C96A50;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+.ReactModal__Content input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Show Password Button */
+.show-password-btn {
+    background: transparent;
+    color: #C96A50;
+    border: 2px solid #C96A50;
+    font-size: 1rem;
+
+    
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.show-password-btn:hover {
+    font-size: 1.25rem;
+    
+    background: #C96A50;
+    color: black;
+}
+
+/* Login & Close Buttons */
+.buttonLogin {
+    background: #C96A50;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    margin: 5px;
+    width: 40%;
+}
+
+.buttonLogin:hover {
+    background: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ReactModal__Content {
+        width: 90%;
+    }
+
+    .buttonOpenModal {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .buttonLogin {
+        font-size: 1rem;
+        padding: 8px 15px;
+        width: 90%;
+    }
+
+    .show-password-btn {
+        font-size: 1.25rem;
+        color: black;
+        
+        padding: 6px 12px;
+    }
+}

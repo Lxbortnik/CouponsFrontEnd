@@ -1,0 +1,139 @@
+/* Import the modern minimalist font */
+
+
+/* Centering the Table */
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+    color: #2f2f2f;
+    border-radius: 8px;    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+table tr td button {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+table thead tr {
+    background: #d5d5d5;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.title-1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+
+/* Table Rows */
+tr {
+    border-bottom: 1px solid #e1e1e1;
+    height: 66px;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+/* Table Cells */
+td {
+    padding: 10px;
+}
+
+/* Input Fields in Edit Mode */
+input, select {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px 6px;
+    background: #2f2f2f;
+    color: white;
+    width: 100%;
+}
+
+select {
+    cursor: pointer;
+    appearance: none; /* Removes default dropdown arrow */
+}
+
+/* Buttons */
+button {
+    
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Edit Button */
+.edit-btn {
+    font-size: 0.8rem;
+    width: 80px;
+    font-weight: 500;
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid lightgray;
+}
+
+.edit-btn:hover {
+    background-color: #C96A50;
+    color: black;
+}
+
+/* Delete Button */
+.delete-btn {
+    font-size: 0.8rem;
+    width: 80px;
+    font-weight: 500;
+    padding: 8px 12px;
+    background: #C96A50;
+    border: 1px solid lightgray;
+}
+
+.delete-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Save Button */
+.save-btn {
+    background-color: #C96A50;
+    color: black;
+    border: none;
+}
+
+.save-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #C96A50;
+}
+
+.cancel-btn:hover {
+    background-color: #C96A50;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+/* Main Container */
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Start content from the top */
+  margin-top: 44px; /* Pushes content below the fixed header */
+  width: 100%;
+  
+  min-height: calc(90vh - 2px); /* Ensures it takes full height minus the header */
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('/public/final-concrete.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px; /* Optional: to give content some spacing */
+}

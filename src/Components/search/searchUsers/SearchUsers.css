@@ -1,0 +1,22 @@
+.search-bar {
+    display: flex;
+}
+
+.search-bar > div {
+    display: flex;
+}
+
+.search-bar .search-container {
+    margin-right: 180px;
+}
+
+.search-bar .search-filter {
+    gap: 20px;
+}
+
+.search-bar .search-container input{
+    width: 290px;
+    text-align: left;
+    padding-left: 20px;
+}
+

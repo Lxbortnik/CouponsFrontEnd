@@ -1,0 +1,73 @@
+/* Uniform CouponCard Size */
+.CouponCard {
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #2f2f2f;
+    padding: 20px;
+    border-radius: 8px;
+    width: 290px;
+    height: 430px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(100%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute inner elements */
+    box-sizing: border-box; /* Ensures padding doesn’t affect size */
+}
+
+.CouponCard img {
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Coupon Image */
+.coupon-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.CouponCard:hover {
+    background-color: white;
+    color: #C96A50;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    border-color: black;
+}
+
+.CouponCard:hover .coupon-image {
+    filter: brightness(1.1);
+}
+
+/* Text Elements */
+.CouponCard h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.CouponCard div {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.CouponCard p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .CouponCard {
+        width: 90%;
+        height: auto; /* Allow flexibility on small screens */
+    }
+}

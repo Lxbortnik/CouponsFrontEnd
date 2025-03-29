@@ -1,0 +1,12 @@
+.coupon-add-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon-add-container > * {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

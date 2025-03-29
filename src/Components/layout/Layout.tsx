@@ -1,25 +1,16 @@
-import React from "react";
-import Header from "../Header/Header";
-import Aside from "../aside/Aside";
-import Footer from "../Footer/Footer";
-import Main from "../main/Main";
-import "./Layout.css"
+import Aside from "./aside/Aside";
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
+import Main from "./main/Main";
 
-export default function Layout(){
-    return(
-        <div>
-                <header>
-                    <Header/>
-                </header>
-                <aside>
-                    <Aside/>
-                </aside>
-                <main>
-                    <Main/>
-                </main>
-                <footer>
-                    <Footer/>
-                </footer>
-            </div>
+
+export default function Layout() {
+    return (
+        <div className="">
+            <Header />
+            <aside><Aside /></aside>
+            <main className="Main"> <Main /></main>
+            <footer><Footer /></footer>
+        </div>
     )
-    }
+}

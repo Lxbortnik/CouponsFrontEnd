@@ -1,0 +1,31 @@
+.MyUser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.MyUser .delete-btn {
+    width: 160px;
+}
+
+.UserDetailsWrapper {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.DetailsWrapper {
+    width: 400px;
+}
+
+.CustomerDetails {
+    margin-top: 60px;
+}

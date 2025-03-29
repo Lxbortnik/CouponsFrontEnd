@@ -1,0 +1,105 @@
+/* Header Styles */
+
+.header {
+    background-color: #d5d5d5;
+    padding: 10px 20px;
+    color: #2f2f2f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar Layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 20px; /* Keep logo on the left */
+}
+
+.navbar-links a {
+    color: #2f2f2f;
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: color 0.3s, opacity 0.3s;
+    font-weight: 300;
+}
+
+.header .logo h1 {
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+/* Navbar Links - Centered */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 24px; /* Increased by 20% from the original 20px */
+    position: relative;
+    font-optical-sizing: auto;
+    font-size: 10px !important;
+}
+
+/* Navbar Links - Styling */
+.navbar-links li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a:hover {
+    color: #C96A50;
+    opacity: 0.5; /* Make half transparent on hover */
+}
+
+/* Select Dropdown */
+select {
+    padding: 6px; /* Slightly increased for better readability */
+    border-radius: 5px;
+    border: none;
+    font-size: 1.25rem; /* Increased by 25% */
+    transition: opacity 0.3s;
+}
+
+/* Select Dropdown - Hover Effect */
+select:hover {
+    opacity: 0.5;
+}
+
+/* Push the content down so it's not hidden under the fixed header */
+body {
+    padding-top: 60px; /* Adjust this value to match the height of your header */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 12px; /* Adjusted spacing for smaller screens */
+    }
+
+    .navbar-logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,112 @@
+/* Import the modern minimalist font */
+
+
+/* Main Single Coupon Container */
+.SingleCoupon {
+    text-align: center;
+    background-color: #363535;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    gap: 50px;
+    flex-direction: row-reverse;
+}
+
+/* Coupon Image - Always Centered */
+.single-coupon-image {
+    display: block;
+    margin: 0 auto;
+    width: 554px;
+    height: 370px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Coupon Title */
+.coupon-title {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+/* Coupon Description */
+.coupon-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Price Styling */
+.coupon-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #C96A50;
+    margin: 10px 0;
+}
+
+/* Other Text */
+.coupon-company,
+.coupon-dates,
+.coupon-stock {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Buttons Section */
+.coupon-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Buy Button */
+.buy-btn {
+    background: #C96A50;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* No Coupon Message */
+.no-coupon {
+    text-align: center;
+    font-size: 1.5rem;
+    color: red;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .SingleCoupon {
+        width: 90%;
+    }
+
+    .single-coupon-image {
+        width: 90%;
+        height: auto;
+    }
+
+    .coupon-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buy-btn, .delete-btn {
+        width: 100%;
+    }
+}

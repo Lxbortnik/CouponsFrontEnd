@@ -1,0 +1,12 @@
+/* Import the modern minimalist font */
+
+
+#companyFilter, #categoryFilter {
+  padding: 10px;
+  width: 160px;
+}
+
+.search-container {
+  display: flex;
+  gap: 30px;
+}
